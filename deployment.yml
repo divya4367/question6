@@ -16,7 +16,7 @@ spec:
         app: q6-app
     spec:
       containers:
-        - image: doc143/divyafinalexam:v1
-          name: webpages2
+        - image: ahmedshaikx/final_exam:v1
+          name: webpages3
         
 
