@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: q6-app
+  labels: 
+    app: q6-app
+spec:
+  replicas: 2
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: q6-app
+  template:
+    metadata:
+      labels:
+        app: q6-app
+    spec:
+      containers:
+        - image: doc143/divyafinalexam:v1
+          name: webpages2
+        
+
